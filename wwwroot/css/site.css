@@ -1,0 +1,20 @@
+/* Custom styles to apply the Inter font family */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0c0a09; /* A very dark gray, almost black */
+    color: #e2e8f0; /* A light gray for text */
+}
+
+/* Custom gradient for the hero section background */
+.hero-gradient {
+    background: radial-gradient(circle at top, rgba(76, 29, 149, 0.3) 0%, rgba(12, 10, 9, 0) 40%);
+}
+
+/* Custom gradient for buttons */
+.btn-gradient {
+    background: linear-gradient(90deg, #8b5cf6, #6366f1);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #a78bfa, #818cf8);
+}

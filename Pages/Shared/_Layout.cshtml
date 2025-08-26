@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Moshino</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body class="antialiased">
+    <!-- Main container -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Header and Navigation -->
+        <partial name="_Navigation" />
+        
+        <!-- Main Content -->
+        <main class="flex-grow hero-gradient">
+            @RenderBody()
+        </main>
+        
+        <!-- Footer -->
+        <partial name="_Footer" />
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="~/js/site.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
